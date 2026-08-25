@@ -10,8 +10,11 @@
 
 <body>
     <main>
-        <h1>Temperature Converter</h1>
+        <h1>🌡️ Temperature Converter</h1>
 
+        <p class="subtitle">
+            Hot, cold, or somewhere in between? ☀️❄️
+        </p>
         <form action="/temperature" method="POST">
             <label for="value">Value</label>
 
@@ -36,11 +39,11 @@
             <button type="submit">Convert</button>
         </form>
 
-        <div id="result">
+        <div class="result">
             {{RESULT}}
         </div>
+    <a href="/">← Back to converters</a>
 
-        
     </main>
 </body>
 
