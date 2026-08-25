@@ -1,4 +1,5 @@
 import express from "express";
+import "dotenv/config";
 import path from "node:path";
 import fs from "node:fs/promises";
 import indexRouter from "./routes/index.js";
@@ -7,7 +8,7 @@ import weightRouter from "./routes/weight.js";
 import temperatureRouter from "./routes/temperature.js";
 
 const app = express();
-const PORT = 3000;
+const PORT = Number(process.env.PORT) || 3000;
 
 app.use(express.urlencoded({ extended: true }));
 
