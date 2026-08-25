@@ -426,3 +426,36 @@ main > a:hover {
     padding: 15px;
   }
 }
+
+.error {
+  margin: 25px 0;
+
+  padding: 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  background: #fff1f2;
+
+  border: 2px dashed #fda4af;
+
+  border-radius: 18px;
+
+  color: #be4564;
+
+  text-align: center;
+
+  animation: resultAppear 0.3s ease;
+}
+
+.error span {
+  font-size: 24px;
+}
+
+.error p {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 500;
+}
